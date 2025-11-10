@@ -5,6 +5,16 @@
 	"Description": "",
 	"Modules": [
 		{
+			"Name": "CoffeeLibrary",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "LatteLibrary",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
 			"Name": "Onepiece",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
@@ -17,6 +27,10 @@
 			"TargetAllowList": [
 				"Editor"
 			]
+		},
+		{
+			"Name": "CoffeeToolbar",
+			"Enabled": true
 		}
 	]
 }

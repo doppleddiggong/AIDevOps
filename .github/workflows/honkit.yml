@@ -1,0 +1,95 @@
+name: Generate HonKit
+
+on:
+  # DevLog 또는 Planning 폴더가 업데이트될 때 자동 실행
+  push:
+    branches:
+      - main
+      - dopple
+      - docs
+    paths:
+      - 'Documents/DevLog/**'
+      - 'Documents/Planning/**'
+      - 'Documents/*.md'
+      - 'Documents/book.json'
+      - '.github/scripts/generate_summary.py'
+
+  # Daily/Weekly report 완료 후 트리거
+  repository_dispatch:
+    types: [honkit-build]
+
+  # 수동 실행 가능
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sync docs branch content
+        run: |
+          git fetch origin docs
+          git checkout docs
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate SUMMARY.md
+        run: |
+          python .github/scripts/generate_summary.py
+          echo "✅ SUMMARY.md has been generated"
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install HonKit and plugins
+        run: |
+          npm install -g honkit
+          npm install -g gitbook-plugin-theme-comscore
+          npm install -g gitbook-plugin-github
+          npm install -g gitbook-plugin-mermaid-gb3
+          npm install -g gitbook-plugin-collapsible-menu
+          npm install -g gitbook-plugin-back-to-top-button
+          npm install -g gitbook-plugin-search-plus
+          npm install -g gitbook-plugin-expandable-chapters-small
+          npm install -g gitbook-plugin-page-toc-button
+          npm install -g gitbook-plugin-anchor-navigation-ex
+          npm install -g gitbook-plugin-code
+          npm install -g gitbook-plugin-alerts
+          npm install -g gitbook-plugin-emphasize
+          npm install -g gitbook-plugin-klipse
+
+      - name: Build HonKit
+        working-directory: Documents
+        run: |
+          honkit build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./Documents/_book
+          publish_branch: gh-pages
+          destination_dir: docs
+          enable_jekyll: false
+          force_orphan: false
+          keep_files: true
+
+      - name: Summary
+        run: |
+          echo "✅ HonKit documentation has been built and deployed!"
+          echo "📚 Documentation will be available at: https://doppleddiggong.github.io/YiSan/docs/"
