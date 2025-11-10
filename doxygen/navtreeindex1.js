@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"UGameDamageType_8h_source.html":[2,0,0,1,1,1,0],
 "UGameDataManager_8cpp.html":[2,0,0,1,3,0,2],
 "UGameDataManager_8cpp.html#a038c6bb641fabd3ef61115cddfaed945":[2,0,0,1,3,0,2,2],
 "UGameDataManager_8cpp.html#a0e6306fe729f4769c0cfcce09e92d147":[2,0,0,1,3,0,2,0],
@@ -8,6 +7,7 @@ var NAVTREEINDEX1 =
 "UGameDataManager_8cpp.html#aa424faa8ab60408aef25c49c7ebf0bb2":[2,0,0,1,3,0,2,1],
 "UGameDataManager_8cpp_source.html":[2,0,0,1,3,0,2],
 "UGameDataManager_8h.html":[2,0,0,1,3,1,3],
+"UGameDataManager_8h.html#a2c7a66eadfe2ccfb485226675a8db2ee":[2,0,0,1,3,1,3,1],
 "UGameDataManager_8h_source.html":[2,0,0,1,3,1,3],
 "UGameFunctionLibrary_8cpp.html":[2,0,0,1,1,0,0],
 "UGameFunctionLibrary_8cpp_source.html":[2,0,0,1,1,0,0],

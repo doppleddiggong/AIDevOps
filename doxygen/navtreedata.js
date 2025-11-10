@@ -59,7 +59,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AListActorManager_8cpp.html",
-"UGameDamageType_8h_source.html",
+"UGameDataManager_8cpp.html",
 "classUDialogWidget.html#a478f23603ae645b6908c23221e5f5445",
 "namespaceGameLayer.html"
 ];
