@@ -1,5 +1,8 @@
 var NAVTREEINDEX3 =
 {
+"namespaceGameColor.html#a85944ad816eb9238756d535533eac5d0":[1,0,0,3],
+"namespaceGameColor.html#aba495ad0b2bb0e48100c5ad01c51fd01":[1,0,0,0],
+"namespaceGameColor.html#ad8c643df28a67f8c2c5f50ec7594997b":[1,0,0,4],
 "namespaceGameColor.html#af7d073693f762258d28d399fbb63562f":[1,0,0,2],
 "namespaceGameLayer.html":[1,0,1],
 "namespaceGameLayer.html#a07dfea414258bbc2a9e8f98ced349615":[1,0,1,2],

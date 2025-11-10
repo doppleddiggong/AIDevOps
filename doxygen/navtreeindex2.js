@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"classUDialogWidget.html#a478f23603ae645b6908c23221e5f5445":[2,0,33,0],
 "classUDialogWidget.html#a5a0540d62c26adcc049d9528399a78a9":[2,0,33,5],
 "classUDialogWidget.html#a5f1a99d811fe6ae7aaee0872d0d962d2":[2,0,33,3],
 "classUDialogWidget.html#a8cef55e059716adbca3761c3cc681a0e":[2,0,33,2],
@@ -245,9 +246,8 @@ var NAVTREEINDEX2 =
 "index.html":[],
 "md_GEMINI.html":[0],
 "md_GEMINI.html#autotoc_md2":[0,0],
+"md_GEMINI.html#autotoc_md3":[0,0,0],
+"md_GEMINI.html#autotoc_md4":[0,0,1],
 "namespaceGameColor.html":[1,0,0],
-"namespaceGameColor.html#a347e21752e1aecee7916040063b5915a":[1,0,0,1],
-"namespaceGameColor.html#a85944ad816eb9238756d535533eac5d0":[1,0,0,3],
-"namespaceGameColor.html#aba495ad0b2bb0e48100c5ad01c51fd01":[1,0,0,0],
-"namespaceGameColor.html#ad8c643df28a67f8c2c5f50ec7594997b":[1,0,0,4]
+"namespaceGameColor.html#a347e21752e1aecee7916040063b5915a":[1,0,0,1]
 };

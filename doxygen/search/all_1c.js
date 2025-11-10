@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['지침_20gemini_20specific_20instructions_0',['Gemini 특화 지침 (Gemini-Specific Instructions)',['../md_GEMINI.html#autotoc_md2',1,'']]]
+  ['범용_20unreal_20engine_20규칙_0',['범용 Unreal Engine 규칙',['../md_GEMINI.html#autotoc_md3',1,'']]]
 ];

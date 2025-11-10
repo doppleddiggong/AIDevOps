@@ -26,7 +26,10 @@ var NAVTREE =
 [
   [ "Onepiece Project Documentation", "index.html", [
     [ "Gemini 에이전트 가이드", "md_GEMINI.html", [
-      [ "Gemini 특화 지침 (Gemini-Specific Instructions)", "md_GEMINI.html#autotoc_md2", null ]
+      [ "Gemini 특화 지침 (Gemini-Specific Instructions)", "md_GEMINI.html#autotoc_md2", [
+        [ "범용 Unreal Engine 규칙", "md_GEMINI.html#autotoc_md3", null ],
+        [ "작업 시 주의사항", "md_GEMINI.html#autotoc_md4", null ]
+      ] ]
     ] ],
     [ "네임스페이스", "namespaces.html", [
       [ "네임스페이스 목록", "namespaces.html", "namespaces_dup" ],
@@ -62,9 +65,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AListActorManager_8cpp.html",
-"UGameDataManager_8cpp.html",
-"classUDialogWidget.html#a5a0540d62c26adcc049d9528399a78a9",
-"namespaceGameColor.html#af7d073693f762258d28d399fbb63562f"
+"UGameDamageType_8h_source.html",
+"classUDialogWidget.html#a478f23603ae645b6908c23221e5f5445",
+"namespaceGameColor.html#a85944ad816eb9238756d535533eac5d0"
 ];
 
 var SYNCONMSG = '패널 동기화를 비활성화하기 위해 클릭하십시오';

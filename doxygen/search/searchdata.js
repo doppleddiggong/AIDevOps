@@ -1,6 +1,6 @@
 var indexSectionsWithContent =
 {
-  0: "abcdefghiklmnopqrstuvwxyz~가에지특",
+  0: "abcdefghiklmnopqrstuvwxyz~가규범시에작주지특",
   1: "afiu",
   2: "gnr",
   3: "acefgilmnou",
