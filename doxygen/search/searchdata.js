@@ -1,6 +1,6 @@
 var indexSectionsWithContent =
 {
-  0: "abcdefghiklmnopqrstuvwxyz~가규범시에작주지특",
+  0: "abcdefghiklmnopqrstuvwxyz~",
   1: "afiu",
   2: "gnr",
   3: "acefgilmnou",
@@ -8,8 +8,7 @@ var indexSectionsWithContent =
   5: "abcdefghiklmnopqrstvw",
   6: "e",
   7: "cdeghilmnpstuwxyz",
-  8: "bcdehiklnpsv",
-  9: "g가에"
+  8: "bcdehiklnpsv"
 };
 
 var indexSectionNames =
@@ -22,8 +21,7 @@ var indexSectionNames =
   5: "variables",
   6: "enums",
   7: "enumvalues",
-  8: "defines",
-  9: "pages"
+  8: "defines"
 };
 
 var indexSectionLabels =
@@ -36,7 +34,6 @@ var indexSectionLabels =
   5: "변수",
   6: "열거형 타입",
   7: "열거형 멤버",
-  8: "매크로",
-  9: "페이지들"
+  8: "매크로"
 };
 
