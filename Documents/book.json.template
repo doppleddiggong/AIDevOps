@@ -12,7 +12,6 @@
   "plugins": [
     "theme-comscore",
     "github",
-    "mermaid-gb3",
     "collapsible-menu",
     "back-to-top-button",
     "search-plus",
@@ -34,10 +33,7 @@
       "favicon": "Reference/icon_yisan512.png"
     },
     "github": {
-      "url": "https://github.com/doppleddiggong/YiSan"
-    },
-    "mermaid-gb3": {
-      "theme": "default"
+      "url": "https://github.com/{{GITHUB_USER}}/{{REPO_NAME}}"
     },
     "page-toc-button": {
       "maxTocDepth": 3,
@@ -90,8 +86,8 @@
   },
   "links": {
     "sidebar": {
-      "GitHub Repository": "https://github.com/doppleddiggong/YiSan",
-      "Doxygen API Docs": "https://doppleddiggong.github.io/YiSan/doxygen/"
+      "GitHub Repository": "https://github.com/{{GITHUB_USER}}/{{REPO_NAME}}",
+      "Doxygen API Docs": "https://{{GITHUB_USER}}.github.io/{{REPO_NAME}}/doxygen/"
     }
   },
   "styles": {

@@ -12,7 +12,6 @@
   "plugins": [
     "theme-comscore",
     "github",
-    "mermaid-gb3",
     "collapsible-menu",
     "back-to-top-button",
     "search-plus",
@@ -33,9 +32,6 @@
     },
     "github": {
       "url": "https://github.com/doppleddiggong/Onepiece"
-    },
-    "mermaid-gb3": {
-      "theme": "default"
     },
     "page-toc-button": {
       "maxTocDepth": 3,
