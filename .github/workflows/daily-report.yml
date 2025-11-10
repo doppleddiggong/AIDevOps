@@ -162,7 +162,7 @@ jobs:
               --type "daily" \
               --devlog-file "Documents/DevLog/Daily/${{ steps.date.outputs.today }}.md" \
               --date "${{ steps.date.outputs.today }}" \
-              --devlog-url "https://doppleddiggong.github.io/YiSan/docs/DevLog/Daily/${{ steps.date.outputs.today }}.html"
+              --devlog-url "https://doppleddiggong.github.io/Onepiece/docs/DevLog/Daily/${{ steps.date.outputs.today }}.html"
           fi
 
       - name: Trigger HonKit Build
@@ -177,4 +177,4 @@ jobs:
           echo "✅ Daily DevLog has been generated!"
           echo "📅 Date: ${{ steps.date.outputs.today }}"
           echo "📝 File: Documents/DevLog/Daily/${{ steps.date.outputs.today }}.md"
-          echo "🔗 URL: https://doppleddiggong.github.io/YiSan/docs/DevLog/Daily/${{ steps.date.outputs.today }}.html"
+          echo "🔗 URL: https://doppleddiggong.github.io/Onepiece/docs/DevLog/Daily/${{ steps.date.outputs.today }}.html"

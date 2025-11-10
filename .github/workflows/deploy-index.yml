@@ -41,4 +41,4 @@ jobs:
       - name: Summary
         run: |
           echo "✅ GitHub Pages index deployed!"
-          echo "🌐 URL: https://doppleddiggong.github.io/YiSan/"
+          echo "🌐 URL: https://doppleddiggong.github.io/Onepiece/"

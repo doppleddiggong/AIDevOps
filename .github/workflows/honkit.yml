@@ -90,4 +90,4 @@ jobs:
       - name: Summary
         run: |
           echo "✅ HonKit documentation has been built and deployed!"
-          echo "📚 Documentation will be available at: https://doppleddiggong.github.io/YiSan/docs/"
+          echo "📚 Documentation will be available at: https://doppleddiggong.github.io/Onepiece/docs/"

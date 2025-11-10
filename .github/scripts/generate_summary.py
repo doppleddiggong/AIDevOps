@@ -244,8 +244,8 @@ class SummaryGenerator:
 
         # External Links
         lines.append("## External Links")
-        lines.append("* [GitHub Repository](https://github.com/doppleddiggong/YiSan)")
-        lines.append("* [Doxygen Documentation](https://doppleddiggong.github.io/YiSan/doxygen/)")
+        lines.append("* [GitHub Repository](https://github.com/doppleddiggong/Onepiece)")
+        lines.append("* [Doxygen Documentation](https://doppleddiggong.github.io/Onepiece/doxygen/)")
         lines.append("")
 
         return "\n".join(lines)
