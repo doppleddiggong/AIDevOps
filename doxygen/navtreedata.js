@@ -65,9 +65,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AListActorManager_8cpp.html",
-"UGameDamageType_8h_source.html",
-"classUDialogWidget.html#a478f23603ae645b6908c23221e5f5445",
-"namespaceGameColor.html#a85944ad816eb9238756d535533eac5d0"
+"UGameDataManager_8cpp.html",
+"classUDialogWidget.html#a5a0540d62c26adcc049d9528399a78a9",
+"namespaceGameColor.html#aba495ad0b2bb0e48100c5ad01c51fd01"
 ];
 
 var SYNCONMSG = '패널 동기화를 비활성화하기 위해 클릭하십시오';

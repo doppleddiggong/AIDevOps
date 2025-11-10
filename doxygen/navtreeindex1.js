@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"UGameDamageType_8h_source.html":[3,0,0,1,1,1,0],
 "UGameDataManager_8cpp.html":[3,0,0,1,3,0,2],
 "UGameDataManager_8cpp.html#a038c6bb641fabd3ef61115cddfaed945":[3,0,0,1,3,0,2,2],
 "UGameDataManager_8cpp.html#a0e6306fe729f4769c0cfcce09e92d147":[3,0,0,1,3,0,2,0],
@@ -67,8 +66,8 @@ var NAVTREEINDEX1 =
 "UParabolaComponent_8h.html#a160b3db1967ea71bee24abc7f977594fa21c2e59531c8710156d34a3c30ac81d5":[3,0,0,0,1,1,3,2,2],
 "UParabolaComponent_8h.html#a160b3db1967ea71bee24abc7f977594fa57cec4137b614c87cb4e24a3d003a3e0":[3,0,0,0,1,1,3,2,1],
 "UParabolaComponent_8h.html#acb24f37a1795b5e9dfdbb98be4898712":[3,0,0,0,1,1,3,3],
-"UParabolaComponent_8h.html#acb24f37a1795b5e9dfdbb98be4898712aa3f80d8f0f1b4ffa8c475f5d60ea5635":[3,0,0,0,1,1,3,3,1],
 "UParabolaComponent_8h.html#acb24f37a1795b5e9dfdbb98be4898712aa3f80d8f0f1b4ffa8c475f5d60ea5635":[3,0,0,0,1,1,3,3,0],
+"UParabolaComponent_8h.html#acb24f37a1795b5e9dfdbb98be4898712aa3f80d8f0f1b4ffa8c475f5d60ea5635":[3,0,0,0,1,1,3,3,1],
 "UParabolaComponent_8h_source.html":[3,0,0,0,1,1,3],
 "USequenceActivatable_8h.html":[3,0,0,0,1,1,4],
 "USequenceActivatable_8h_source.html":[3,0,0,0,1,1,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "classUDialogWidget.html":[2,0,33],
 "classUDialogWidget.html#a0ecea9a42f95585624450175e1e30b09":[2,0,33,9],
 "classUDialogWidget.html#a2571c0fb4f561cfaade086680ab757f4":[2,0,33,8],
-"classUDialogWidget.html#a41af2b60d631b3cb7d0583285c411c35":[2,0,33,4]
+"classUDialogWidget.html#a41af2b60d631b3cb7d0583285c411c35":[2,0,33,4],
+"classUDialogWidget.html#a478f23603ae645b6908c23221e5f5445":[2,0,33,0]
 };
