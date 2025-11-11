@@ -1,0 +1,122 @@
+name: AI Commit Message Suggestion
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - main
+      - develop
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  suggest-commit-message:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Make script executable
+        run: chmod +x .github/scripts/ai_commit_suggestion.py
+
+      - name: Generate AI Commit Message Suggestion
+        id: generate
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          RESULT=$(python .github/scripts/ai_commit_suggestion.py \
+            "${{ github.event.pull_request.number }}" \
+            "${{ github.repository_owner }}" \
+            "${{ github.event.repository.name }}")
+
+          # JSON 파싱하여 출력
+          COMMIT_MSG=$(echo "$RESULT" | python -c "import sys, json; print(json.load(sys.stdin)['commit_message'])")
+
+          # GitHub Actions Output으로 전달 (multiline)
+          echo "commit_message<<EOF" >> $GITHUB_OUTPUT
+          echo "$COMMIT_MSG" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Find existing comment
+        id: find_comment
+        uses: peter-evans/find-comment@v3
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: 'github-actions[bot]'
+          body-includes: '🤖 AI 제안 커밋 메시지'
+
+      - name: Create or Update PR Comment
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          comment-id: ${{ steps.find_comment.outputs.comment-id }}
+          issue-number: ${{ github.event.pull_request.number }}
+          edit-mode: replace
+          body: |
+            ## 🤖 AI 제안 커밋 메시지
+
+            ```
+            ${{ steps.generate.outputs.commit_message }}
+            ```
+
+            ---
+
+            ### 📋 적용 방법
+
+            #### Option 1: 로컬에서 적용 (권장)
+            ```bash
+            # PR 브랜치로 이동
+            git checkout ${{ github.event.pull_request.head.ref }}
+
+            # 최신 커밋 메시지 수정
+            git commit --amend
+
+            # 에디터에서 위 메시지로 교체 후 저장
+
+            # Force push
+            git push --force-with-lease
+            ```
+
+            #### Option 2: GitHub Actions로 자동 적용
+            아래 버튼을 클릭하여 자동으로 커밋 메시지를 적용할 수 있습니다.
+
+            **⚠️ 주의**: 이 작업은 PR의 마지막 커밋을 amend하고 force push합니다.
+
+            [🔄 Apply Suggestion](https://github.com/${{ github.repository }}/actions/workflows/apply-commit-suggestion.yml?query=workflow%3A%22Apply+Commit+Suggestion%22)
+
+            위 링크를 클릭한 후:
+            1. "Run workflow" 버튼 클릭
+            2. PR 번호 입력: `${{ github.event.pull_request.number }}`
+            3. "Run workflow" 실행
+
+            ---
+
+            <details>
+            <summary>📊 분석 정보</summary>
+
+            - **분석된 파일 수**: ${{ github.event.pull_request.changed_files }}
+            - **추가된 줄**: +${{ github.event.pull_request.additions }}
+            - **삭제된 줄**: -${{ github.event.pull_request.deletions }}
+            - **베이스 브랜치**: `${{ github.event.pull_request.base.ref }}`
+            - **헤드 브랜치**: `${{ github.event.pull_request.head.ref }}`
+
+            </details>
+
+            <sub>🤖 Generated with OpenAI GPT-4o-mini | [Feedback](https://github.com/${{ github.repository }}/issues)</sub>
+
+      - name: Summary
+        run: |
+          echo "✅ AI commit message suggestion has been posted!"
+          echo "📝 PR #${{ github.event.pull_request.number }}"
+          echo "🔗 ${{ github.event.pull_request.html_url }}"
