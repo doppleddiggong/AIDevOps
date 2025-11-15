@@ -3,7 +3,7 @@
 <html lang="ko" >
     <head>
         <meta charset="UTF-8">
-        <title>2025-11-10 · Onepiece Development Documentation</title>
+        <title>2025-11-15 · Onepiece Development Documentation</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 6.1.4">
@@ -74,10 +74,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../Weekly/2025-W46-Summary.html" />
+    <link rel="next" href="2025-11-14.html" />
     
     
-    <link rel="prev" href="2025-11-11.html" />
+    <link rel="prev" href="../AgentLog/dopple/251110.html" />
     
 
     </head>
@@ -169,7 +169,7 @@
         
         
     
-        <li class="chapter " data-level="4.1" data-path="2025-11-15.html">
+        <li class="chapter active" data-level="4.1" data-path="2025-11-15.html">
             
                 <a href="2025-11-15.html">
             
@@ -234,7 +234,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="4.6" data-path="2025-11-10.html">
+        <li class="chapter " data-level="4.6" data-path="2025-11-10.html">
             
                 <a href="2025-11-10.html">
             
@@ -337,7 +337,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >2025-11-10</a>
+        <a href="../.." >2025-11-15</a>
     </h1>
 </div>
 
@@ -352,25 +352,20 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="daily-devlog-—-2025-11-10-월">Daily DevLog — 2025-11-10 (월)</h1>
-<p><strong>범위</strong>: 2025-11-09 ~ 2025-11-10
+                                <h1 id="daily-devlog-—-2025-11-15-토">Daily DevLog — 2025-11-15 (토)</h1>
+<p><strong>범위</strong>: 2025-11-14 ~ 2025-11-15
 <strong>브랜치</strong>: docs / 베이스: origin/main
 <strong>릴리즈 타겟</strong>: N/A</p>
 <hr></hr>
 <h2 id="1-오늘의-핵심-변경-top-changes">1. 오늘의 핵심 변경 (Top Changes)</h2>
 <ul>
-<li><p>[chore] chore(devlog): daily devlog 2025-11-10 — 영향: 유지보수</p>
-</li>
-<li><p>[chore] chore: 불필요한 파일 삭제 및 워크플로우 수정 — 영향: 유지보수</p>
-</li>
-<li><p>[other] Merge branch 'main' of <a href="https://github.com/doppleddiggong/Onepiece" target="_blank">https://github.com/doppleddiggong/Onepiece</a> — 영향: 기타 변경</p>
-</li>
+<li>변경 사항 없음</li>
 </ul>
 <h3 id="commit-heatmap">Commit Heatmap</h3>
 <ul>
-<li>총 커밋: 16</li>
-<li>변경 라인: +25756 / -3582</li>
-<li>영향 파일: Doxyfile.template, Doxyfile, .claude/commands/self-assessment.md, Source/LatteLibrary/Character/Private/ALatteGameCharacter.cpp, Source/LatteLibrary/Character/Public/ALatteGameCharacter.h</li>
+<li>총 커밋: 0</li>
+<li>변경 라인: +0 / -0</li>
+<li>영향 파일: N/A</li>
 </ul>
 <hr></hr>
 <h2 id="2-시스템-영향도-impact">2. 시스템 영향도 (Impact)</h2>
@@ -428,7 +423,7 @@
 <hr></hr>
 <h2 id="7-mermaid-개요도">7. Mermaid 개요도</h2>
 <pre><code class="lang-mermaid">flowchart LR
-  Dev[Commits: 16] --&gt; Build[UE5 Build/Cook]
+  Dev[Commits: 0] --&gt; Build[UE5 Build/Cook]
   Build --&gt; Test[Tests: 0/0]
   Test --&gt; Doc[Doxygen Update]
   Doc --&gt; Daily[Daily DevLog]
@@ -440,42 +435,7 @@
   style Daily fill:#d1ecf1
 </code></pre>
 <hr></hr>
-<h2 id="생성-시간-2025-11-10-145531"><strong>생성 시간</strong>: 2025-11-10 14:55:31</h2>
-<h1 id="🎓-개발자-성장-피드백-gpt-4-analysis">🎓 개발자 성장 피드백 (GPT-4 Analysis)</h1>
-<h2 id="🤔-성찰-질문">🤔 성찰 질문</h2>
-<ul>
-<li>왜 빌드 정보나 테스트 결과가 기록되지 않았는가? 자동화된 프로세스에 어떤 문제가 있었는지 확인해 볼 필요가 있습니다.</li>
-<li>불필요한 파일을 제거하는 기준은 무엇이었는가? 이러한 기준이 팀의 다른 구성원에게도 명확하게 전달되고 있는가?</li>
-<li>현재 워크플로우에서 어떤 부분이 가장 자주 수정되고 있는가? 반복적으로 수정되는 이유는 무엇인가?</li>
-<li>이번 작업에서 변경된 내용이 장기적으로 유지보수에 어떤 영향을 미칠 수 있을까?</li>
-</ul>
-<h2 id="💡-대안-제시">💡 대안 제시</h2>
-<ul>
-<li>빌드 및 테스트의 자동화를 강화하기 위해 CI/CD 파이프라인을 설정하고, 그 결과를 DevLog에 자동으로 포함시키는 방법을 고려해볼 수 있습니다.</li>
-<li>불필요한 파일 및 워크플로우 수정 시, 변경 이력이 명확하게 기록되도록 주석이나 문서화를 강화하면 좋습니다.</li>
-<li>Doxygen이나 다른 문서화 도구의 효율적인 사용을 위해 자동화 스크립트를 작성하여 문서화를 일관되게 유지할 수 있습니다.</li>
-</ul>
-<h2 id="📚-학습-포인트">📚 학습 포인트</h2>
-<ul>
-<li><strong>CI/CD 파이프라인</strong>: Jenkins, GitHub Actions 등을 사용하여 자동으로 빌드, 테스트, 배포가 이루어지도록 설정하는 방법을 학습할 수 있습니다.</li>
-<li><strong>정적 코드 분석</strong>: 코드 품질을 유지하기 위해 SonarQube 같은 도구를 활용하여 코드의 잠재적 결함을 사전에 발견하는 방법을 익힐 수 있습니다.</li>
-<li><strong>지속적인 문서화</strong>: 코드 변경에 따라 문서화가 자동으로 업데이트되도록 설정하는 방법과 그 중요성을 이해할 수 있습니다.</li>
-</ul>
-<h2 id="⚠️-주의-사항">⚠️ 주의 사항</h2>
-<ul>
-<li>빌드, 테스트 및 정적 분석의 결과가 기록되지 않으면 코드의 품질을 보장하기 어렵습니다. 이러한 부분을 시스템적으로 개선해야 합니다.</li>
-<li>불필요한 파일 제거 과정에서 실수로 필요한 파일을 삭제할 위험이 있습니다. 항상 백업과 협업을 고려해 작업해야 합니다.</li>
-<li>워크플로우 수정 시, 팀원들에게 변경 사항이 충분히 공유되지 않으면 혼란을 초래할 수 있습니다. 변경 사항을 공유할 효과적인 커뮤니케이션 채널이 필요합니다.</li>
-</ul>
-<h2 id="🎯-다음-단계-제안">🎯 다음 단계 제안</h2>
-<ul>
-<li>CI/CD 파이프라인을 설정하여 빌드와 테스트가 자동으로 실행되고 그 결과가 DevLog에 반영되도록 개선해보세요.</li>
-<li>팀 내 코드리뷰 세션을 통해 불필요한 파일 관리 및 워크플로우 수정에 대한 베스트 프랙티스를 논의해보세요.</li>
-<li>정적 분석 도구를 도입하여 코드의 품질을 높이는 방법을 연구하고 적용해보세요.</li>
-<li>문서화의 중요성을 팀 차원에서 재고하고, 문서화 자동화 스크립트를 구축해보세요.</li>
-</ul>
-<hr></hr>
-<p><em>이 피드백은 OpenAI GPT-4를 통해 자동 생성되었습니다. 참고용으로 활용하시고, 최종 판단은 개발자 본인이 내리시기 바랍니다.</em></p>
+<p><strong>생성 시간</strong>: 2025-11-15 01:07:47</p>
  <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"></link> <script>     window.klipse_settings = {         selector: ".language-klipse, .lang-eval-clojure",         selector_eval_js: ".lang-eval-js",         selector_eval_python_client: ".lang-eval-python",         selector_eval_php: ".lang-eval-php",         selector_eval_scheme: ".lang-eval-scheme",         selector_eval_ruby: ".lang-eval-ruby",         selector_reagent: ".lang-reagent",        selector_google_charts: ".lang-google-chart",        selector_es2017: ".lang-eval-es2017",        selector_jsx: ".lang-eval-jsx",        selector_transpile_jsx: ".lang-transpile-jsx",        selector_render_jsx: ".lang-render-jsx",        selector_react: ".lang-react",        selector_eval_markdown: ".lang-render-markdown",        selector_eval_lambdaway: ".lang-render-lambdaway",        selector_eval_cpp: ".lang-eval-cpp",        selector_eval_html: ".lang-render-html",        selector_sql: ".lang-eval-sql",        selector_brainfuck: "lang-eval-brainfuck",        selector_js: ".lang-transpile-cljs"    }; </script> <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
                                 
                                 </section>
@@ -503,12 +463,12 @@
 
             
                 
-                <a href="2025-11-11.html" class="navigation navigation-prev " aria-label="Previous page: 2025-11-11">
+                <a href="../AgentLog/dopple/251110.html" class="navigation navigation-prev " aria-label="Previous page: dopple - 2025-11-10">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../Weekly/2025-W46-Summary.html" class="navigation navigation-next " aria-label="Next page: 주간 개발 요약 (2025-11-10 ~ 2025-11-16)">
+                <a href="2025-11-14.html" class="navigation navigation-next " aria-label="Next page: 2025-11-14">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -519,7 +479,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2025-11-10","level":"4.6","depth":1,"next":{"title":"주간 개발 요약 (2025-11-10 ~ 2025-11-16)","level":"5.1","depth":1,"path":"DevLog/Weekly/2025-W46-Summary.md","ref":"DevLog/Weekly/2025-W46-Summary.md","articles":[]},"previous":{"title":"2025-11-11","level":"4.5","depth":1,"path":"DevLog/Daily/2025-11-11.md","ref":"DevLog/Daily/2025-11-11.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore","github","collapsible-menu","back-to-top-button","search-plus","expandable-chapters-small","page-toc-button","-anchor-navigation-ex","code","alerts","emphasize","klipse","-lunr","-search","-sharing"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"emphasize":{"style":"yellow"},"github":{"url":"https://github.com/doppleddiggong/Onepiece"},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"showLevel":false,"associatedWithSummary":true,"printLog":false,"multipleH1":false,"mode":"float","float":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"}},"theme-comscore":{"showLevel":true},"page-toc-button":{"maxTocDepth":3,"minTocSize":2},"back-to-top-button":{},"alerts":{"info":{"label":"정보","icon":"fa fa-info-circle","className":"info"},"warning":{"label":"주의","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"위험","icon":"fa fa-times-circle","className":"danger"},"tip":{"label":"팁","icon":"fa fa-lightbulb-o","className":"tip"}},"expandable-chapters-small":{},"klipse":{"myConfigKey":"it's the default value"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"DoppledDiggong Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Onepiece Development Documentation","language":"ko","links":{"sidebar":{"GitHub Repository":"https://github.com/doppleddiggong/Onepiece","Doxygen API Docs":"https://doppleddiggong.github.io/Onepiece/doxygen/"}},"gitbook":"3.2.3","description":"Onepiece 프로젝트 개발 문서 - DevLog, Planning, System Review"},"file":{"path":"DevLog/Daily/2025-11-10.md","mtime":"2025-11-15T01:08:07.501Z","type":"markdown"},"gitbook":{"version":"6.1.4","time":"2025-11-15T01:08:41.697Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2025-11-15","level":"4.1","depth":1,"next":{"title":"2025-11-14","level":"4.2","depth":1,"path":"DevLog/Daily/2025-11-14.md","ref":"DevLog/Daily/2025-11-14.md","articles":[]},"previous":{"title":"dopple - 2025-11-10","level":"3.1","depth":1,"path":"DevLog/AgentLog/dopple/251110.md","ref":"DevLog/AgentLog/dopple/251110.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore","github","collapsible-menu","back-to-top-button","search-plus","expandable-chapters-small","page-toc-button","-anchor-navigation-ex","code","alerts","emphasize","klipse","-lunr","-search","-sharing"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"collapsible-menu":{},"emphasize":{"style":"yellow"},"github":{"url":"https://github.com/doppleddiggong/Onepiece"},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"showLevel":false,"associatedWithSummary":true,"printLog":false,"multipleH1":false,"mode":"float","float":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"}},"theme-comscore":{"showLevel":true},"page-toc-button":{"maxTocDepth":3,"minTocSize":2},"back-to-top-button":{},"alerts":{"info":{"label":"정보","icon":"fa fa-info-circle","className":"info"},"warning":{"label":"주의","icon":"fa fa-exclamation-triangle","className":"warning"},"danger":{"label":"위험","icon":"fa fa-times-circle","className":"danger"},"tip":{"label":"팁","icon":"fa fa-lightbulb-o","className":"tip"}},"expandable-chapters-small":{},"klipse":{"myConfigKey":"it's the default value"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"DoppledDiggong Team","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Onepiece Development Documentation","language":"ko","links":{"sidebar":{"GitHub Repository":"https://github.com/doppleddiggong/Onepiece","Doxygen API Docs":"https://doppleddiggong.github.io/Onepiece/doxygen/"}},"gitbook":"3.2.3","description":"Onepiece 프로젝트 개발 문서 - DevLog, Planning, System Review"},"file":{"path":"DevLog/Daily/2025-11-15.md","mtime":"2025-11-15T01:08:08.768Z","type":"markdown"},"gitbook":{"version":"6.1.4","time":"2025-11-15T01:08:41.697Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
